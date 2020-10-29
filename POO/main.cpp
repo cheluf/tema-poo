@@ -70,7 +70,7 @@ ospatar::ospatar(ospatar& ospatar)
     cout<< "Detalii despre servire:" << " " << "Numele angajatului:" << this->nume_ospatar << " " << "ID:" << this->id_angajat << endl;
 }
 
-~ospatar(){
+ospatar::~ospatar(){
     cout<<"Tipsul ospatarului reprezinta 10% din comanda. Va multumim"<< endl;
 }
 
