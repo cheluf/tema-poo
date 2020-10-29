@@ -2,50 +2,18 @@
 #include <cmath>
 using namespace std;
 
-
-class produse
-{
+class produse{
     string nume_produs;
     float pret_produs;
     int cod_produs;
 
 public:
-    explicit produse();
-    explicit produse(string);
-    produse(string,float);
     produse(string,float,int);
     produse(produse&);
     ~produse();
 
     void cadou();
 };
-
-produse::produse() {
-
-    cout << "Produsul ales: " ;
-    this->nume_produs= "-";
-    this->pret_produs= 0;
-    this->cod_produs= 0;
-    cout <<"Produsul ales:" <<this->nume_produs << " Pret: " <<this->pret_produs<<" ID:" <<this->cod_produs;
-}
-
-
-produse::produse(string nume_produs) {
-
-    cout << "Produsul ales: " ;
-    this->nume_produs=nume_produs;
-    this->pret_produs= 0;
-    this->cod_produs= 0;
-    cout <<this->nume_produs<< " Pret: " <<this->pret_produs<<" ID: " <<this->cod_produs;
-}
-
-produse::produse(string nume_produs,float pret_produs) {
-    cout << "Produsul ales: " ;
-    this->nume_produs=nume_produs;
-    this->pret_produs= pret_produs;
-    this->cod_produs= 0;
-    cout <<this->nume_produs<< " Pret: " <<this->pret_produs<<" ID: " <<this->cod_produs;
-}
 
 produse::produse(string nume_produs,float pret_produs,int cod_produs) {
     cout << "Produsul ales: ";
@@ -59,7 +27,6 @@ produse::produse(string nume_produs,float pret_produs,int cod_produs) {
 
 produse::produse(produse& produse)
 {
-    cout<<"Constructor copiere ";
     this->nume_produs=produse.nume_produs;
     this->pret_produs=produse.pret_produs;
     this->cod_produs=produse.cod_produs;
@@ -78,8 +45,38 @@ void produse::cadou()
         cout<< "\nVa multumim ca ati ales restaurantul nostru! Aceste bomboane sunt din partea noastra!";
 }
 
+class ospatar{
+
+    string nume_ospatar;
+    int id_angajat;
+
+public:
+    ospatar(string, int);
+    ospatar(ospatar&);
+    ~ospatar();
+};
+
+ospatar::ospatar(string nume_ospatar, int id_angajat)
+{
+    this-> nume_ospatar= nume_ospatar;
+    this-> id_angajat= id_angajat;
+    cout<< "Detalii despre servire:" << " " << "Numele angajatului:" << this->nume_ospatar << " " << "ID:" << this->id_angajat << endl;
+}
+
+ospatar::ospatar(ospatar& ospatar)
+{
+    this-> nume_ospatar= ospatar.nume_ospatar;
+    this-> id_angajat= ospatar.id_angajat;
+    cout<< "Detalii despre servire:" << " " << "Numele angajatului:" << this->nume_ospatar << " " << "ID:" << this->id_angajat << endl;
+}
+
+~ospatar(){
+    cout<<"Tipsul ospatarului reprezinta 10% din comanda. Va multumim"<< endl;
+}
+
 int main()
 {
     produse samp(" Sampanie ",1230,4);
+    ospatar ion("Ionescu Marian",24);
     return 0;
 }
