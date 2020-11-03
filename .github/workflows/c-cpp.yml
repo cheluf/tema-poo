@@ -13,8 +13,8 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory:
-        tema-poo
+        working-directory: tema-poo
+
 
     steps:
     - uses: actions/checkout@v2
