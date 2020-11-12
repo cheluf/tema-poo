@@ -44,10 +44,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/chelufabian/Desktop/POO
+CMAKE_SOURCE_DIR = /Users/chelufabian/Documents/GitHub/tema-poo/POO
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/chelufabian/Desktop/POO/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/chelufabian/Documents/GitHub/tema-poo/POO/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -74,14 +74,14 @@ preinstall:
 CMakeFiles/POO.dir/all:
 	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/depend
 	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/chelufabian/Desktop/POO/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target POO"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/chelufabian/Documents/GitHub/tema-poo/POO/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target POO"
 .PHONY : CMakeFiles/POO.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/POO.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chelufabian/Desktop/POO/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chelufabian/Documents/GitHub/tema-poo/POO/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/POO.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chelufabian/Desktop/POO/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chelufabian/Documents/GitHub/tema-poo/POO/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/POO.dir/rule
 
 # Convenience name for target.

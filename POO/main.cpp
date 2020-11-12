@@ -1,99 +1,128 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 class produse{
     string nume_produs;
     int cod_produs;
-    int masa;
-    float pret_produs;
-    friend class ospatar;
-
+    double pret_produs;
 public:
-    produse(string,float,int,int);
-    produse(float);
-    produse(produse&);
-    ~produse();
-    void cadou();
+    produse(string,double,int);
+    double getPret();
+    int getCod();
+    string getNume();
+
 };
 
-produse::produse(string nume_produs,float pret_produs,int cod_produs,int masa) {
+produse::produse(string nume_produs, double pret_produs ,int cod_produs) {
 
     this->nume_produs = nume_produs;
     this->pret_produs = pret_produs;
     this->cod_produs = cod_produs;
-    this->masa=masa;
-    cout<< "Produs:"<< this->nume_produs << " || " <<"Pret:" << this->pret_produs << " || " << "ID:" << this->cod_produs << " || " << "Nr.masa:" << this->masa;
+    cout<< "Produs:"<< this->nume_produs << " || " <<"Pret:" << this->pret_produs << " || " << "ID:" << this->cod_produs<<endl;
 
 }
 
-produse::produse(float pret_produs)
-{
-    this->pret_produs=pret_produs;
+int produse::getCod(){
+    return cod_produs;
 }
 
-produse::produse(produse& produse)
-{
-    this->nume_produs=produse.nume_produs;
-    this->pret_produs=produse.pret_produs;
-    this->cod_produs=produse.cod_produs;
-    this->masa=produse.masa;
+string produse::getNume(){
+    return nume_produs;
 }
 
-produse::~produse()
-{
-    cout<<" \n*****************";
+double produse::getPret(){
+    return pret_produs;
 }
 
-void produse::cadou()
-{
-    if(pret_produs >= 1220)
-        cout<< "\nVa multumim ca ati ales restaurantul nostru! Acest vin este din partea casei!!"<< endl;
-}
 
 class ospatar{
 
     string nume_ospatar;
     int id_angajat;
-
 public:
-
     ospatar(string, int);
-    ospatar(ospatar&);
-    ~ospatar();
-    void nota_de_plata(produse plata);
+    string getOspatar();
+
 };
 
-ospatar::ospatar(string nume_ospatar, int id_angajat)
-{
+ospatar::ospatar(string nume_ospatar, int id_angajat){
     this-> nume_ospatar= nume_ospatar;
     this-> id_angajat= id_angajat;
 
-    cout<<"\nOspatar:" <<this->nume_ospatar << " || " << "ID:" <<this->id_angajat << endl;
+    cout<<"Ospatar:" <<this->nume_ospatar << " || " << "ID:" <<this->id_angajat << endl;
 }
 
-ospatar::ospatar(ospatar& ospatar)
+string ospatar::getOspatar(){
+    return nume_ospatar;
+}
+
+class masa{
+    int nrmasa;
+    int persoane;
+    int nr_produse;
+    vector <produse> produs;
+
+public:
+    masa(int,int,int,vector <produse> produsele);
+    void nota_de_plata(ospatar);
+    void cadou(double);
+
+};
+masa::masa(int nrmasa,int persoane,int nr_produse,vector <produse> produsele)
 {
-    this-> nume_ospatar= ospatar.nume_ospatar;
-    this-> id_angajat= ospatar.id_angajat;
+    this->nrmasa=nrmasa;
+    this->persoane=persoane;
+    this->nr_produse=nr_produse;
+    this->produs=produsele;
+    cout<<"Numar masa:"<< " || " << this->nrmasa << " || " << "Numar persoane:" << this->persoane << " || " << "Nr produse: " << nr_produse <<endl;
 }
 
-ospatar::~ospatar(){
-    cout<<"\nTipsul ospatarului reprezinta 10%."<< endl;
+void masa::cadou(double suma){
+    if( suma>=1200 ) cout<< "Multumim pentru ca ati ales localul nostru! Veti primi din partea casei o sticla de MOET."<<endl;
 }
 
-void ospatar::nota_de_plata(produse p)
+void masa::nota_de_plata(ospatar ospt)
 {
-    cout<< "\nNumele meu este" << " " << nume_ospatar << " " << ",iar eu am fost ospatarul dvs. Aveti in total de plata:" << " " << p.pret_produs << "lei. " << "Doriti cash sau card?"<< endl;
+    cout<<"Nota de plata masa " <<nrmasa <<endl;
+    cout<<"********************"<<endl;
+    int i;
+    double suma = 0;
+    for(i=0; i< nr_produse; i++)
+    {
+        cout<<produs[i].getNume()<< " || " << "ID:" <<produs[i].getCod() << " || " <<produs[i].getPret() << "lei"<<endl;// produsele comandate
+
+    }
+    cout<<"********************"<<endl;
+    cout<< "Nume ospatar: "<<ospt.getOspatar()<<endl;
+    for(i=0; i<nr_produse; i++)                  //pretul tuturor produselor
+    {
+        suma = suma + produs[i].getPret();
+    }
+    cout<<"TOTAL: " << suma << "lei"<<endl;
+    cout<<"********************"<<endl;
+    cadou(suma);
 }
 
 int main()
 {
-    produse samp(" Sampanie ",1230,4,13);
-    produse samp1(1230);
-    ospatar ion("Ionescu Marian",24);
 
-    samp.cadou();
-    ion.nota_de_plata(samp1);
+    produse vin("Vin",250,4);
+    produse sampanie("Sampanie",1230,4);
+    produse snitel("Snitel",45,4);
+    cout<< " \n ";
+    ospatar vasile("Vasile Adrian",25);
+    ospatar ion("Ionescu Marian",24);
+    cout<< " \n ";
+    masa masa3(3,4,1,{vin});
+    masa masa2(2,5,3,{snitel,vin,sampanie});
+    masa masa1(1,3,2,{snitel,sampanie});
+    cout<< " \n ";
+    masa3.nota_de_plata(vasile);
+    cout<< " \n ";
+    masa2.nota_de_plata(ion);
+    cout<< " \n ";
+    masa1.nota_de_plata(vasile);
 
     return 0;
 }

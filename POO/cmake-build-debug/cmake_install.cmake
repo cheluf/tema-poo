@@ -1,4 +1,4 @@
-# Install script for directory: /Users/chelufabian/Desktop/POO
+# Install script for directory: /Users/chelufabian/Documents/GitHub/tema-poo/POO
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/chelufabian/Desktop/POO/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/chelufabian/Documents/GitHub/tema-poo/POO/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

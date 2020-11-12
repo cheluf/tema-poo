@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/chelufabian/Desktop/POO/main.cpp
+/Users/chelufabian/Documents/GitHub/tema-poo/POO/main.cpp
 iostream
 -
-cmath
+vector
 -
 
