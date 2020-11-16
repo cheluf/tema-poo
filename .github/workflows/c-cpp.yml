@@ -8,12 +8,12 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     defaults:
       run:
         shell: bash
         working-directory: POO
+        
     steps:
     - uses: actions/checkout@v2
     - name: dependencies
@@ -34,7 +34,7 @@ jobs:
         gcov *.cpp
         mkdir cov/
         gcovr -r . --html --html-details -o cov/coverage.html --print-summary
-        mv -v cov/  public/
+        mv -v cov/  ../public/
     - name: deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
