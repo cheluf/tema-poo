@@ -11,7 +11,7 @@ public:
     double getPret();
     int getCod();
     string getNume();
-    produse &operator=(produse &);
+    produse &operator=(const produse &);
     ~produse() = default;
 
 };
@@ -36,7 +36,7 @@ string produse::getNume(){
 double produse::getPret(){
     return pret_produs;
 }
-produse &produse::operator=(produse &prod) {
+produse &produse::operator=(const produse &prod) {
     this->nume_produs = prod.nume_produs;            // op =
     this->pret_produs = prod.pret_produs;
     this->cod_produs = prod.cod_produs;
