@@ -87,7 +87,6 @@ class masa{
     int nrmasa;
     int persoane;
     int nr_produse;
-    vector <produse> produs;
 
 public:
     masa(const int,const int,const int,vector <produse> produsele);
@@ -96,7 +95,9 @@ public:
     masa(masa& masa);
     ~masa()=default;
     friend ostream& operator<<(ostream& ost, masa& ms);
+    friend masa operator+(masa&);
 
+    vector <produse> produs;
 };
 
 ostream& operator<<(ostream& out,masa& ms)
@@ -114,6 +115,14 @@ masa::masa(const int nrmasa,const int persoane,const int nr_produse,vector <prod
 
 void masa::cadou(double suma){
     if( suma>=1200 ) cout<< "Multumim pentru ca ati ales localul nostru! Veti primi din partea casei o sticla de MOET."<<endl;
+}
+
+masa operator+(masa& m,produse& p){
+
+    for (int i = 0; i < m.produs.size(); ++i) {
+        m.produs.push_back(m.produs[i]);
+    }
+    return m;
 }
 
 void masa::nota_de_plata(ospatar ospt)
@@ -158,12 +167,19 @@ int main()
     masa masa1(1,3,2,{snitel,sampanie});
 
     masa1.nota_de_plata(vasile);
-    cout<< " \n ";
+
+    cout << " \n ";
     cout << vasile;
-    cout<< " \n ";
+    cout << " \n ";
     cout << vin;
-    cout<< " \n ";
+    cout << " \n ";
     cout << masa1;
+
+    masa1=masa1+vin;
+
+    masa1.nota_de_plata(vasile);
+
+
 
     return 0;
 }
