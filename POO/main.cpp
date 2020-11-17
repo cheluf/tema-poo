@@ -12,17 +12,22 @@ public:
     int getCod();
     string getNume();
     produse &operator=(const produse &);
+    friend ostream& operator<<(ostream& out,const produse& abc);
     ~produse() = default;
 
 };
+
+ostream& operator<<(ostream& out, const produse& abc)
+{
+    out<< "Produs:"<< abc.nume_produs << " || " <<"Pret:" << abc.pret_produs << " || " << "ID:" << abc.cod_produs<<endl;
+    return out;
+}
 
 produse::produse(const string nume_produs, const double pret_produs ,const int cod_produs) {
 
     this->nume_produs = nume_produs;
     this->pret_produs = pret_produs;
     this->cod_produs = cod_produs;
-    cout<< "Produs:"<< this->nume_produs << " || " <<"Pret:" << this->pret_produs << " || " << "ID:" << this->cod_produs<<endl;
-
 }
 
 int produse::getCod(){
@@ -50,20 +55,19 @@ class ospatar{
     int id_angajat;
 public:
     ospatar(const string,const int);
-    string getOspatar();
+    string getOspatar() const;
     ospatar(ospatar& ospatar);
     ~ospatar()=default;
+    friend ostream& operator<<(ostream& out, ospatar& osp);
 
 };
 
 ospatar::ospatar(const string nume_ospatar,const int id_angajat){
     this-> nume_ospatar= nume_ospatar;
     this-> id_angajat= id_angajat;
-
-    cout<<"Ospatar:" <<this->nume_ospatar << " || " << "ID:" <<this->id_angajat << endl;
 }
 
-string ospatar::getOspatar(){
+string ospatar::getOspatar() const{
     return nume_ospatar;
 }
 
@@ -73,6 +77,11 @@ ospatar::ospatar(ospatar& osp)
     this->id_angajat=osp.id_angajat;
 }
 
+ostream& operator<<(ostream& out,ospatar& osp)
+{
+    out<<"Ospatar:" << osp.nume_ospatar << " || " << "ID:" << osp.id_angajat << endl;
+    return out;
+}
 
 class masa{
     int nrmasa;
@@ -86,15 +95,21 @@ public:
     void cadou(double);
     masa(masa& masa);
     ~masa()=default;
+    friend ostream& operator<<(ostream& ost, masa& ms);
 
 };
+
+ostream& operator<<(ostream& out,masa& ms)
+{
+    out<<"Numar masa:"<< " || " << ms.nrmasa << " || " << "Numar persoane:" << ms.persoane << " || " << "Nr produse: " << ms.nr_produse <<endl;
+}
+
 masa::masa(const int nrmasa,const int persoane,const int nr_produse,vector <produse> produsele)
 {
     this->nrmasa=nrmasa;
     this->persoane=persoane;
     this->nr_produse=nr_produse;
     this->produs=produsele;
-    cout<<"Numar masa:"<< " || " << this->nrmasa << " || " << "Numar persoane:" << this->persoane << " || " << "Nr produse: " << nr_produse <<endl;
 }
 
 void masa::cadou(double suma){
@@ -136,19 +151,19 @@ int main()
     produse vin("Vin",250,4);
     produse sampanie("Sampanie",1230,4);
     produse snitel("Snitel",45,4);
-    cout<< " \n ";
     ospatar vasile("Vasile Adrian",25);
     ospatar ion("Ionescu Marian",24);
-    cout<< " \n ";
     masa masa3(3,4,1,{vin});
     masa masa2(2,5,3,{snitel,vin,sampanie});
     masa masa1(1,3,2,{snitel,sampanie});
-    cout<< " \n ";
-    masa3.nota_de_plata(vasile);
-    cout<< " \n ";
-    masa2.nota_de_plata(ion);
-    cout<< " \n ";
+
     masa1.nota_de_plata(vasile);
+    cout<< " \n ";
+    cout << vasile;
+    cout<< " \n ";
+    cout << vin;
+    cout<< " \n ";
+    cout << masa1;
 
     return 0;
 }
