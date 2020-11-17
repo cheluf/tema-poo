@@ -116,7 +116,7 @@ masa::masa(const int nrmasa,const int persoane,const int nr_produse,vector <prod
 void masa::cadou(double suma){
     if( suma>=1200 ) cout<< "Multumim pentru ca ati ales localul nostru! Veti primi din partea casei o sticla de MOET."<<endl;
 }
-
+/*
 masa operator+(masa& m,produse& p){
 
     for (int i = 0; i < m.produs.size(); ++i) {
@@ -124,7 +124,7 @@ masa operator+(masa& m,produse& p){
     }
     return m;
 }
-
+*/
 void masa::nota_de_plata(ospatar ospt)
 {
     cout<<"Nota de plata masa " <<nrmasa <<endl;
@@ -175,9 +175,9 @@ int main()
     cout << " \n ";
     cout << masa1;
 
-    masa1=masa1+vin;
+    //masa1=masa1+vin;
 
-    masa1.nota_de_plata(vasile);
+    //masa1.nota_de_plata(vasile);
 
 
 
