@@ -87,6 +87,7 @@ class masa{
     int nrmasa;
     int persoane;
     int nr_produse;
+    vector <produse> produs;
 
 public:
     masa(const int,const int,const int,vector <produse> produsele);
@@ -95,9 +96,9 @@ public:
     masa(masa& masa);
     ~masa()=default;
     friend ostream& operator<<(ostream& ost, masa& ms);
-    friend masa operator+(masa&);
+    //friend masa operator+(masa&);
 
-    vector <produse> produs;
+
 };
 
 ostream& operator<<(ostream& out,masa& ms)
@@ -116,6 +117,7 @@ masa::masa(const int nrmasa,const int persoane,const int nr_produse,vector <prod
 void masa::cadou(double suma){
     if( suma>=1200 ) cout<< "Multumim pentru ca ati ales localul nostru! Veti primi din partea casei o sticla de MOET."<<endl;
 }
+
 /*
 masa operator+(masa& m,produse& p){
 
@@ -125,6 +127,7 @@ masa operator+(masa& m,produse& p){
     return m;
 }
 */
+
 void masa::nota_de_plata(ospatar ospt)
 {
     cout<<"Nota de plata masa " <<nrmasa <<endl;
@@ -138,7 +141,7 @@ void masa::nota_de_plata(ospatar ospt)
     }
     cout<<"********************"<<endl;
     cout<< "Nume ospatar: "<<ospt.getOspatar()<<endl;
-    for(i=0; i<nr_produse; i++)                  //pretul tuturor produselor
+    for(i=0; i<nr_produse; i++)                          //pretul tuturor produselor
     {
         suma = suma + produs[i].getPret();
     }
