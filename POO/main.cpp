@@ -7,14 +7,16 @@ class produse{
     int cod_produs;
     double pret_produs;
 public:
-    produse(string,double,int);
+    produse(const string,const double,const int);
     double getPret();
     int getCod();
     string getNume();
+    produse &operator=(produse &);
+    ~produse() = default;
 
 };
 
-produse::produse(string nume_produs, double pret_produs ,int cod_produs) {
+produse::produse(const string nume_produs, const double pret_produs ,const int cod_produs) {
 
     this->nume_produs = nume_produs;
     this->pret_produs = pret_produs;
@@ -34,6 +36,12 @@ string produse::getNume(){
 double produse::getPret(){
     return pret_produs;
 }
+produse &produse::operator=(produse &prod) {
+    this->nume_produs = prod.nume_produs;            // op =
+    this->pret_produs = prod.pret_produs;
+    this->cod_produs = prod.cod_produs;
+    return (*this);
+}
 
 
 class ospatar{
@@ -41,12 +49,14 @@ class ospatar{
     string nume_ospatar;
     int id_angajat;
 public:
-    ospatar(string, int);
+    ospatar(const string,const int);
     string getOspatar();
+    ospatar(ospatar& ospatar);
+    ~ospatar()=default;
 
 };
 
-ospatar::ospatar(string nume_ospatar, int id_angajat){
+ospatar::ospatar(const string nume_ospatar,const int id_angajat){
     this-> nume_ospatar= nume_ospatar;
     this-> id_angajat= id_angajat;
 
@@ -57,6 +67,13 @@ string ospatar::getOspatar(){
     return nume_ospatar;
 }
 
+ospatar::ospatar(ospatar& osp)
+{
+    this->nume_ospatar=osp.nume_ospatar;
+    this->id_angajat=osp.id_angajat;
+}
+
+
 class masa{
     int nrmasa;
     int persoane;
@@ -64,12 +81,14 @@ class masa{
     vector <produse> produs;
 
 public:
-    masa(int,int,int,vector <produse> produsele);
+    masa(const int,const int,const int,vector <produse> produsele);
     void nota_de_plata(ospatar);
     void cadou(double);
+    masa(masa& masa);
+    ~masa()=default;
 
 };
-masa::masa(int nrmasa,int persoane,int nr_produse,vector <produse> produsele)
+masa::masa(const int nrmasa,const int persoane,const int nr_produse,vector <produse> produsele)
 {
     this->nrmasa=nrmasa;
     this->persoane=persoane;
@@ -102,6 +121,13 @@ void masa::nota_de_plata(ospatar ospt)
     cout<<"TOTAL: " << suma << "lei"<<endl;
     cout<<"********************"<<endl;
     cadou(suma);
+}
+
+masa::masa(masa& masa){
+    this->nrmasa=masa.nrmasa;
+    this->persoane=masa.persoane;
+    this->nr_produse=masa.nr_produse;
+    this->produs=masa.produs;
 }
 
 int main()
