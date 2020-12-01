@@ -70,17 +70,62 @@ CMakeFiles/POO.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO.dir/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chelufabian/Documents/GitHub/tema-poo/POO/main.cpp -o CMakeFiles/POO.dir/main.cpp.s
 
+CMakeFiles/POO.dir/produs.cpp.o: CMakeFiles/POO.dir/flags.make
+CMakeFiles/POO.dir/produs.cpp.o: ../produs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chelufabian/Documents/GitHub/tema-poo/POO/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/POO.dir/produs.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/POO.dir/produs.cpp.o -c /Users/chelufabian/Documents/GitHub/tema-poo/POO/produs.cpp
+
+CMakeFiles/POO.dir/produs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POO.dir/produs.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chelufabian/Documents/GitHub/tema-poo/POO/produs.cpp > CMakeFiles/POO.dir/produs.cpp.i
+
+CMakeFiles/POO.dir/produs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO.dir/produs.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chelufabian/Documents/GitHub/tema-poo/POO/produs.cpp -o CMakeFiles/POO.dir/produs.cpp.s
+
+CMakeFiles/POO.dir/ospatar.cpp.o: CMakeFiles/POO.dir/flags.make
+CMakeFiles/POO.dir/ospatar.cpp.o: ../ospatar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chelufabian/Documents/GitHub/tema-poo/POO/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/POO.dir/ospatar.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/POO.dir/ospatar.cpp.o -c /Users/chelufabian/Documents/GitHub/tema-poo/POO/ospatar.cpp
+
+CMakeFiles/POO.dir/ospatar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POO.dir/ospatar.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chelufabian/Documents/GitHub/tema-poo/POO/ospatar.cpp > CMakeFiles/POO.dir/ospatar.cpp.i
+
+CMakeFiles/POO.dir/ospatar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO.dir/ospatar.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chelufabian/Documents/GitHub/tema-poo/POO/ospatar.cpp -o CMakeFiles/POO.dir/ospatar.cpp.s
+
+CMakeFiles/POO.dir/masa.cpp.o: CMakeFiles/POO.dir/flags.make
+CMakeFiles/POO.dir/masa.cpp.o: ../masa.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chelufabian/Documents/GitHub/tema-poo/POO/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/POO.dir/masa.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/POO.dir/masa.cpp.o -c /Users/chelufabian/Documents/GitHub/tema-poo/POO/masa.cpp
+
+CMakeFiles/POO.dir/masa.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POO.dir/masa.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chelufabian/Documents/GitHub/tema-poo/POO/masa.cpp > CMakeFiles/POO.dir/masa.cpp.i
+
+CMakeFiles/POO.dir/masa.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO.dir/masa.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chelufabian/Documents/GitHub/tema-poo/POO/masa.cpp -o CMakeFiles/POO.dir/masa.cpp.s
+
 # Object files for target POO
 POO_OBJECTS = \
-"CMakeFiles/POO.dir/main.cpp.o"
+"CMakeFiles/POO.dir/main.cpp.o" \
+"CMakeFiles/POO.dir/produs.cpp.o" \
+"CMakeFiles/POO.dir/ospatar.cpp.o" \
+"CMakeFiles/POO.dir/masa.cpp.o"
 
 # External object files for target POO
 POO_EXTERNAL_OBJECTS =
 
 POO: CMakeFiles/POO.dir/main.cpp.o
+POO: CMakeFiles/POO.dir/produs.cpp.o
+POO: CMakeFiles/POO.dir/ospatar.cpp.o
+POO: CMakeFiles/POO.dir/masa.cpp.o
 POO: CMakeFiles/POO.dir/build.make
 POO: CMakeFiles/POO.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/chelufabian/Documents/GitHub/tema-poo/POO/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable POO"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/chelufabian/Documents/GitHub/tema-poo/POO/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable POO"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/POO.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -83,6 +83,24 @@
 		<Unit filename="/Users/chelufabian/Documents/GitHub/tema-poo/POO/main.cpp">
 			<Option target="POO"/>
 		</Unit>
+		<Unit filename="/Users/chelufabian/Documents/GitHub/tema-poo/POO/masa.cpp">
+			<Option target="POO"/>
+		</Unit>
+		<Unit filename="/Users/chelufabian/Documents/GitHub/tema-poo/POO/masa.h">
+			<Option target="POO"/>
+		</Unit>
+		<Unit filename="/Users/chelufabian/Documents/GitHub/tema-poo/POO/ospatar.cpp">
+			<Option target="POO"/>
+		</Unit>
+		<Unit filename="/Users/chelufabian/Documents/GitHub/tema-poo/POO/ospatar.h">
+			<Option target="POO"/>
+		</Unit>
+		<Unit filename="/Users/chelufabian/Documents/GitHub/tema-poo/POO/produs.cpp">
+			<Option target="POO"/>
+		</Unit>
+		<Unit filename="/Users/chelufabian/Documents/GitHub/tema-poo/POO/produs.h">
+			<Option target="POO"/>
+		</Unit>
 		<Unit filename="/Users/chelufabian/Documents/GitHub/tema-poo/POO/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -150,6 +150,87 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+masa.o: masa.cpp.o
+
+.PHONY : masa.o
+
+# target to build an object file
+masa.cpp.o:
+	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/masa.cpp.o
+.PHONY : masa.cpp.o
+
+masa.i: masa.cpp.i
+
+.PHONY : masa.i
+
+# target to preprocess a source file
+masa.cpp.i:
+	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/masa.cpp.i
+.PHONY : masa.cpp.i
+
+masa.s: masa.cpp.s
+
+.PHONY : masa.s
+
+# target to generate assembly for a file
+masa.cpp.s:
+	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/masa.cpp.s
+.PHONY : masa.cpp.s
+
+ospatar.o: ospatar.cpp.o
+
+.PHONY : ospatar.o
+
+# target to build an object file
+ospatar.cpp.o:
+	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/ospatar.cpp.o
+.PHONY : ospatar.cpp.o
+
+ospatar.i: ospatar.cpp.i
+
+.PHONY : ospatar.i
+
+# target to preprocess a source file
+ospatar.cpp.i:
+	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/ospatar.cpp.i
+.PHONY : ospatar.cpp.i
+
+ospatar.s: ospatar.cpp.s
+
+.PHONY : ospatar.s
+
+# target to generate assembly for a file
+ospatar.cpp.s:
+	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/ospatar.cpp.s
+.PHONY : ospatar.cpp.s
+
+produs.o: produs.cpp.o
+
+.PHONY : produs.o
+
+# target to build an object file
+produs.cpp.o:
+	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/produs.cpp.o
+.PHONY : produs.cpp.o
+
+produs.i: produs.cpp.i
+
+.PHONY : produs.i
+
+# target to preprocess a source file
+produs.cpp.i:
+	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/produs.cpp.i
+.PHONY : produs.cpp.i
+
+produs.s: produs.cpp.s
+
+.PHONY : produs.s
+
+# target to generate assembly for a file
+produs.cpp.s:
+	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/produs.cpp.s
+.PHONY : produs.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +243,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... masa.o"
+	@echo "... masa.i"
+	@echo "... masa.s"
+	@echo "... ospatar.o"
+	@echo "... ospatar.i"
+	@echo "... ospatar.s"
+	@echo "... produs.o"
+	@echo "... produs.i"
+	@echo "... produs.s"
 .PHONY : help
 
 
