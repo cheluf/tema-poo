@@ -15,14 +15,8 @@ produs.h
 /Users/chelufabian/Documents/GitHub/tema-poo/POO/produs.h
 ospatar.h
 /Users/chelufabian/Documents/GitHub/tema-poo/POO/ospatar.h
-
-/Users/chelufabian/Documents/GitHub/tema-poo/POO/masa.cpp
-masa.h
-/Users/chelufabian/Documents/GitHub/tema-poo/POO/masa.h
-iostream
--
-vector
--
+note.h
+/Users/chelufabian/Documents/GitHub/tema-poo/POO/note.h
 
 /Users/chelufabian/Documents/GitHub/tema-poo/POO/masa.h
 iostream
@@ -34,19 +28,17 @@ produs.h
 ospatar.h
 /Users/chelufabian/Documents/GitHub/tema-poo/POO/ospatar.h
 
-/Users/chelufabian/Documents/GitHub/tema-poo/POO/ospatar.cpp
+/Users/chelufabian/Documents/GitHub/tema-poo/POO/note.h
+iostream
+-
+vector
+-
 ospatar.h
 /Users/chelufabian/Documents/GitHub/tema-poo/POO/ospatar.h
-iostream
--
 
 /Users/chelufabian/Documents/GitHub/tema-poo/POO/ospatar.h
 iostream
 -
-
-/Users/chelufabian/Documents/GitHub/tema-poo/POO/produs.cpp
-produs.h
-/Users/chelufabian/Documents/GitHub/tema-poo/POO/produs.h
 
 /Users/chelufabian/Documents/GitHub/tema-poo/POO/produs.h
 iostream

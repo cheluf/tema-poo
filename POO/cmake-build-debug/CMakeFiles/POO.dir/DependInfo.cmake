@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/chelufabian/Documents/GitHub/tema-poo/POO/main.cpp" "/Users/chelufabian/Documents/GitHub/tema-poo/POO/cmake-build-debug/CMakeFiles/POO.dir/main.cpp.o"
   "/Users/chelufabian/Documents/GitHub/tema-poo/POO/masa.cpp" "/Users/chelufabian/Documents/GitHub/tema-poo/POO/cmake-build-debug/CMakeFiles/POO.dir/masa.cpp.o"
+  "/Users/chelufabian/Documents/GitHub/tema-poo/POO/note.cpp" "/Users/chelufabian/Documents/GitHub/tema-poo/POO/cmake-build-debug/CMakeFiles/POO.dir/note.cpp.o"
   "/Users/chelufabian/Documents/GitHub/tema-poo/POO/ospatar.cpp" "/Users/chelufabian/Documents/GitHub/tema-poo/POO/cmake-build-debug/CMakeFiles/POO.dir/ospatar.cpp.o"
   "/Users/chelufabian/Documents/GitHub/tema-poo/POO/produs.cpp" "/Users/chelufabian/Documents/GitHub/tema-poo/POO/cmake-build-debug/CMakeFiles/POO.dir/produs.cpp.o"
   )

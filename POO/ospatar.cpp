@@ -5,6 +5,7 @@
 #include "ospatar.h"
 #include <iostream>
 using namespace std;
+
 ospatar::ospatar(const string nume_ospatar,const int id_angajat){
     this-> nume_ospatar= nume_ospatar;
     this-> id_angajat= id_angajat;

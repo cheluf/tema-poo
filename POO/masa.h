@@ -11,12 +11,14 @@
 
 
 class masa{
+
 int nrmasa;
 int persoane;
 int nr_produse;
 std::vector <produs> produse;
 
 public:
+masa() = default;
 masa(const int,const int,const int,std::vector <produs> produsele);
 void nota_de_plata(ospatar);
 void cadou(double);
@@ -24,6 +26,7 @@ masa(masa& masa);
 ~masa()=default;
 friend std::ostream& operator<<(std::ostream& ost, masa& ms);
 friend masa operator+(masa&,produs&);
+
 };
 
 #endif //POO_MASA_H

@@ -7,9 +7,11 @@
 #include <iostream>
 
 class ospatar{
+protected:
     std::string nume_ospatar;
     int id_angajat;
 public:
+    ospatar()= default;
     ospatar(const std::string,const int);
     std::string getOspatar() const;
     ospatar(ospatar& ospatar);

@@ -177,6 +177,33 @@ masa.cpp.s:
 	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/masa.cpp.s
 .PHONY : masa.cpp.s
 
+note.o: note.cpp.o
+
+.PHONY : note.o
+
+# target to build an object file
+note.cpp.o:
+	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/note.cpp.o
+.PHONY : note.cpp.o
+
+note.i: note.cpp.i
+
+.PHONY : note.i
+
+# target to preprocess a source file
+note.cpp.i:
+	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/note.cpp.i
+.PHONY : note.cpp.i
+
+note.s: note.cpp.s
+
+.PHONY : note.s
+
+# target to generate assembly for a file
+note.cpp.s:
+	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/note.cpp.s
+.PHONY : note.cpp.s
+
 ospatar.o: ospatar.cpp.o
 
 .PHONY : ospatar.o
@@ -246,6 +273,9 @@ help:
 	@echo "... masa.o"
 	@echo "... masa.i"
 	@echo "... masa.s"
+	@echo "... note.o"
+	@echo "... note.i"
+	@echo "... note.s"
 	@echo "... ospatar.o"
 	@echo "... ospatar.i"
 	@echo "... ospatar.s"

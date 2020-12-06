@@ -3,6 +3,7 @@
 
 CMakeFiles/POO.dir/main.cpp.o: ../main.cpp
 CMakeFiles/POO.dir/main.cpp.o: ../masa.h
+CMakeFiles/POO.dir/main.cpp.o: ../note.h
 CMakeFiles/POO.dir/main.cpp.o: ../ospatar.h
 CMakeFiles/POO.dir/main.cpp.o: ../produs.h
 
@@ -10,6 +11,10 @@ CMakeFiles/POO.dir/masa.cpp.o: ../masa.cpp
 CMakeFiles/POO.dir/masa.cpp.o: ../masa.h
 CMakeFiles/POO.dir/masa.cpp.o: ../ospatar.h
 CMakeFiles/POO.dir/masa.cpp.o: ../produs.h
+
+CMakeFiles/POO.dir/note.cpp.o: ../note.cpp
+CMakeFiles/POO.dir/note.cpp.o: ../note.h
+CMakeFiles/POO.dir/note.cpp.o: ../ospatar.h
 
 CMakeFiles/POO.dir/ospatar.cpp.o: ../ospatar.cpp
 CMakeFiles/POO.dir/ospatar.cpp.o: ../ospatar.h
