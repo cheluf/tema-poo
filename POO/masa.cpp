@@ -54,6 +54,7 @@ void masa::nota_de_plata(ospatar ospt)
     cout<<"TOTAL: " << suma << "lei"<<endl;
     cout<<"********************"<<endl;
     cadou(suma);
+    produse.clear();
 }
 
 masa::masa(masa& masa){

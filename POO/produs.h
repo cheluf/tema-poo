@@ -22,7 +22,7 @@ public:
     ~produs() = default;
 
     virtual void afisare_produs(){
-        std::cout<< nume_produs << cod_produs;
+        std::cout<< "Nume produs: " <<nume_produs << " || ID: "<<cod_produs << std::endl;
     }
 
 };

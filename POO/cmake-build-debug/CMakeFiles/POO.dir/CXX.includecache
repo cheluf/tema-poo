@@ -6,30 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/chelufabian/Documents/GitHub/tema-poo/POO/main.cpp
-iostream
--
-masa.h
-/Users/chelufabian/Documents/GitHub/tema-poo/POO/masa.h
-produs.h
-/Users/chelufabian/Documents/GitHub/tema-poo/POO/produs.h
-ospatar.h
-/Users/chelufabian/Documents/GitHub/tema-poo/POO/ospatar.h
-mancare.h
-/Users/chelufabian/Documents/GitHub/tema-poo/POO/mancare.h
-
-/Users/chelufabian/Documents/GitHub/tema-poo/POO/mancare.cpp
-mancare.h
-/Users/chelufabian/Documents/GitHub/tema-poo/POO/mancare.h
-
-/Users/chelufabian/Documents/GitHub/tema-poo/POO/mancare.h
-iostream
--
-produs.h
-/Users/chelufabian/Documents/GitHub/tema-poo/POO/produs.h
-vector
--
-
 /Users/chelufabian/Documents/GitHub/tema-poo/POO/masa.cpp
 masa.h
 /Users/chelufabian/Documents/GitHub/tema-poo/POO/masa.h
@@ -47,12 +23,6 @@ produs.h
 /Users/chelufabian/Documents/GitHub/tema-poo/POO/produs.h
 ospatar.h
 /Users/chelufabian/Documents/GitHub/tema-poo/POO/ospatar.h
-
-/Users/chelufabian/Documents/GitHub/tema-poo/POO/ospatar.cpp
-ospatar.h
-/Users/chelufabian/Documents/GitHub/tema-poo/POO/ospatar.h
-iostream
--
 
 /Users/chelufabian/Documents/GitHub/tema-poo/POO/ospatar.h
 iostream

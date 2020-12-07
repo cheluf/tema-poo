@@ -13,20 +13,8 @@ class mancare: public produs
    std::vector <std::string> ing;
 public:
     mancare() = default;
-    mancare(std::vector<std::string> ingr)
-    {
-        this->ing = ingr;
-    }
     ~mancare()=default;
-    void afisare_produs() override{
-        std::cout<< nume_produs<<' '<<pret_produs << cod_produs;
-        int i;
-        int size;
-        size= ing.size();
-        for(i=0; i < size ; i ++)
-        {
-            std::cout<< ing[i];
-        }
-    }
+    mancare(std::string nume_produs,std::vector<std::string> ingr);
+    void afisare_produs() override;
 };
 #endif //POO_MANCARE_H

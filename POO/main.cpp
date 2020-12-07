@@ -29,11 +29,9 @@ int main() {
 
     cout << "\n";
 
-    //vin.afisare_produs();
-    mancare id4({"parmezan","rosii"});
+    vin.afisare_produs();
+    mancare id4("VIN",{"Scortisoara, Vin rosu"});
     id4.afisare_produs();
-
-
 
     return 0;
 }
