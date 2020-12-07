@@ -266,11 +266,11 @@
           </tr>
           <tr>
             <td class="headerName">File:</td>
-            <td class="headerValue">masa.h</td>
+            <td class="headerValue">mancare.cpp</td>
             <td></td>
             <td class="headerName">Lines:</td>
-            <td class="headerTableEntry">2</td>
-            <td class="headerTableEntry">2</td>
+            <td class="headerTableEntry">11</td>
+            <td class="headerTableEntry">11</td>
             <td class="headerTableEntry" style="background-color:LightGreen">100.0 %</td>
           </tr>
           <tr>
@@ -278,9 +278,9 @@
             <td class="headerValue">2020-12-07 22:14:30</td>
             <td></td>
             <td class="headerName">Branches:</td>
-            <td class="headerTableEntry">0</td>
-            <td class="headerTableEntry">0</td>
-            <td class="headerTableEntry" style="background-color:LightGray">- %</td>
+            <td class="headerTableEntry">6</td>
+            <td class="headerTableEntry">10</td>
+            <td class="headerTableEntry" style="background-color:LightPink">60.0 %</td>
           </tr>
         </table>
       </td>
@@ -310,7 +310,7 @@
     <td align="right" class="lineno"><pre>2</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>// Created by Chelu Fabian on 01.12.2020.</pre></td>
+    <td align="left" class="src "><pre>// Created by Chelu Fabian on 07.12.2020.</pre></td>
     </tr>
 
     <tr>
@@ -331,63 +331,63 @@
     <td align="right" class="lineno"><pre>5</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#ifndef POO_MASA_H</pre></td>
+    <td align="left" class="src "><pre>#include "mancare.h"</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>6</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#define POO_MASA_H</pre></td>
+    <td align="left" class="src "><pre>#include &lt;iostream&gt;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>7</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#include &lt;iostream&gt;</pre></td>
+    <td align="left" class="src "><pre>#include &lt;vector&gt;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>8</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#include &lt;vector&gt;</pre></td>
+    <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>9</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#include "produs.h"</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>mancare::mancare(std::string nume_produs,std::vector&lt;std::string&gt; ingr)</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>10</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#include "ospatar.h"</pre></td>
+    <td align="left" class="src "><pre>{</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>11</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>this-&gt;nume_produs=nume_produs;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>12</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>this-&gt;ing = ingr;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>13</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
-    <td align="left" class="src coveredLine"><pre>class masa{</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>}</pre></td>
     </tr>
 
     <tr>
@@ -400,127 +400,78 @@
     <tr>
     <td align="right" class="lineno"><pre>15</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>int nrmasa;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>void mancare::afisare_produs()</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>16</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>int persoane;</pre></td>
+    <td align="left" class="src "><pre>{</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>17</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>int nr_produse;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>std::cout&lt;&lt;nume_produs&lt;&lt; std::endl;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>18</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>std::vector &lt;produs&gt; produse;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>std::cout&lt;&lt; "Ingrediente:" &lt;&lt; std::endl;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>19</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="left" class="src "><pre>int i;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>20</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>public:</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="takenBranch" title="Branch 2 taken 1 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>for( i=0; i &lt; ing.size() ; i ++ )</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>21</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>masa() = default;</pre></td>
+    <td align="left" class="src "><pre>{</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>22</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>masa(const int,const int,const int,std::vector &lt;produs&gt; produsele);</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>std::cout&lt;&lt; ing[i];</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>23</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>void nota_de_plata(ospatar);</pre></td>
+    <td align="left" class="src "><pre>}</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>24</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>void cadou(double);</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>ing.clear();</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>25</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>masa(masa&amp; masa);</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>26</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>5</pre></td>
-    <td align="left" class="src coveredLine"><pre>~masa()=default;</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>27</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>friend std::ostream&amp; operator&lt;&lt;(std::ostream&amp; ost, masa&amp; ms);</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>28</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>friend masa operator+(masa&amp;,produs&amp;);</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>29</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>30</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>};</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>31</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>32</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#endif //POO_MASA_H</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 3 taken 1 times">&check;</span><span class="notTakenBranch" title="Branch 4 not taken">&cross;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
+    <td align="left" class="src coveredLine"><pre>}</pre></td>
     </tr>
 
   </table>

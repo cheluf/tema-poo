@@ -269,13 +269,13 @@
             <td class="headerValue">produs.h</td>
             <td></td>
             <td class="headerName">Lines:</td>
-            <td class="headerTableEntry">2</td>
-            <td class="headerTableEntry">2</td>
+            <td class="headerTableEntry">6</td>
+            <td class="headerTableEntry">6</td>
             <td class="headerTableEntry" style="background-color:LightGreen">100.0 %</td>
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2020-12-01 16:02:20</td>
+            <td class="headerValue">2020-12-07 22:14:30</td>
             <td></td>
             <td class="headerName">Branches:</td>
             <td class="headerTableEntry">0</td>
@@ -366,91 +366,91 @@
     <td align="right" class="lineno"><pre>10</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>    std::string nume_produs;</pre></td>
+    <td align="left" class="src "><pre>protected:</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>11</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>    int cod_produs;</pre></td>
+    <td align="left" class="src "><pre>    std::string nume_produs;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>12</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>    double pret_produs;</pre></td>
+    <td align="left" class="src "><pre>    int cod_produs;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>13</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>public:</pre></td>
+    <td align="left" class="src "><pre>    double pret_produs;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>14</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>    produs(const std::string,const double,const int);</pre></td>
+    <td align="left" class="src "><pre>public:</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>15</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>    double getPret();</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>    produs()=default;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>16</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>    int getCod();</pre></td>
+    <td align="left" class="src "><pre>    produs(const std::string,const double,const int);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>17</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>    std::string getNume();</pre></td>
+    <td align="left" class="src "><pre>    double getPret();</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>18</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>    produs &amp;operator=(const produs &amp;);</pre></td>
+    <td align="left" class="src "><pre>    int getCod();</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>19</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>    friend std::ostream&amp; operator&lt;&lt;(std::ostream&amp; out,const produs&amp; abc);</pre></td>
+    <td align="left" class="src "><pre>    std::string getNume();</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>20</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>32</pre></td>
-    <td align="left" class="src coveredLine"><pre>    ~produs() = default;</pre></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>    produs &amp;operator=(const produs &amp;);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>21</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="left" class="src "><pre>    friend std::ostream&amp; operator&lt;&lt;(std::ostream&amp; out,const produs&amp; abc);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>22</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>};</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>33</pre></td>
+    <td align="left" class="src coveredLine"><pre>    ~produs() = default;</pre></td>
     </tr>
 
     <tr>
@@ -462,6 +462,48 @@
 
     <tr>
     <td align="right" class="lineno"><pre>24</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>    virtual void afisare_produs(){</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>25</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>        std::cout&lt;&lt; "Nume produs: " &lt;&lt;nume_produs &lt;&lt; " || ID: "&lt;&lt;cod_produs &lt;&lt; std::endl;</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>26</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount coveredLine"><pre>1</pre></td>
+    <td align="left" class="src coveredLine"><pre>    }</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>27</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre></pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>28</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>};</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>29</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre></pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>30</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>#endif //POO_PRODUS_H</pre></td>
