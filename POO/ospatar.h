@@ -7,7 +7,6 @@
 #include <iostream>
 
 class ospatar{
-protected:
     std::string nume_ospatar;
     int id_angajat;
 public:

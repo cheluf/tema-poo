@@ -7,10 +7,12 @@
 #include <iostream>
 
 class produs{
+protected:
     std::string nume_produs;
     int cod_produs;
     double pret_produs;
 public:
+    produs()=default;
     produs(const std::string,const double,const int);
     double getPret();
     int getCod();
@@ -18,6 +20,10 @@ public:
     produs &operator=(const produs &);
     friend std::ostream& operator<<(std::ostream& out,const produs& abc);
     ~produs() = default;
+
+    virtual void afisare_produs(){
+        std::cout<< nume_produs << cod_produs;
+    }
 
 };
 

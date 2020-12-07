@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+mancare.o: mancare.cpp.o
+
+.PHONY : mancare.o
+
+# target to build an object file
+mancare.cpp.o:
+	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/mancare.cpp.o
+.PHONY : mancare.cpp.o
+
+mancare.i: mancare.cpp.i
+
+.PHONY : mancare.i
+
+# target to preprocess a source file
+mancare.cpp.i:
+	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/mancare.cpp.i
+.PHONY : mancare.cpp.i
+
+mancare.s: mancare.cpp.s
+
+.PHONY : mancare.s
+
+# target to generate assembly for a file
+mancare.cpp.s:
+	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/mancare.cpp.s
+.PHONY : mancare.cpp.s
+
 masa.o: masa.cpp.o
 
 .PHONY : masa.o
@@ -176,33 +203,6 @@ masa.s: masa.cpp.s
 masa.cpp.s:
 	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/masa.cpp.s
 .PHONY : masa.cpp.s
-
-note.o: note.cpp.o
-
-.PHONY : note.o
-
-# target to build an object file
-note.cpp.o:
-	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/note.cpp.o
-.PHONY : note.cpp.o
-
-note.i: note.cpp.i
-
-.PHONY : note.i
-
-# target to preprocess a source file
-note.cpp.i:
-	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/note.cpp.i
-.PHONY : note.cpp.i
-
-note.s: note.cpp.s
-
-.PHONY : note.s
-
-# target to generate assembly for a file
-note.cpp.s:
-	$(MAKE) -f CMakeFiles/POO.dir/build.make CMakeFiles/POO.dir/note.cpp.s
-.PHONY : note.cpp.s
 
 ospatar.o: ospatar.cpp.o
 
@@ -270,12 +270,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mancare.o"
+	@echo "... mancare.i"
+	@echo "... mancare.s"
 	@echo "... masa.o"
 	@echo "... masa.i"
 	@echo "... masa.s"
-	@echo "... note.o"
-	@echo "... note.i"
-	@echo "... note.s"
 	@echo "... ospatar.o"
 	@echo "... ospatar.i"
 	@echo "... ospatar.s"

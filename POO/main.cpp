@@ -2,7 +2,7 @@
 #include "masa.h"
 #include "produs.h"
 #include "ospatar.h"
-#include "note.h"
+#include "mancare.h"
 using namespace std;
 
 int main() {
@@ -29,10 +29,9 @@ int main() {
 
     cout << "\n";
 
-    note unu({1,3,10},vasile);
-    unu.nota_ospatar(vasile);
-
-
+    //vin.afisare_produs();
+    mancare id4({"parmezan","rosii"});
+    id4.afisare_produs();
 
 
 

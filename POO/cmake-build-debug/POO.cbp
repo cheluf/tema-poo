@@ -83,16 +83,16 @@
 		<Unit filename="/Users/chelufabian/Documents/GitHub/tema-poo/POO/main.cpp">
 			<Option target="POO"/>
 		</Unit>
+		<Unit filename="/Users/chelufabian/Documents/GitHub/tema-poo/POO/mancare.cpp">
+			<Option target="POO"/>
+		</Unit>
+		<Unit filename="/Users/chelufabian/Documents/GitHub/tema-poo/POO/mancare.h">
+			<Option target="POO"/>
+		</Unit>
 		<Unit filename="/Users/chelufabian/Documents/GitHub/tema-poo/POO/masa.cpp">
 			<Option target="POO"/>
 		</Unit>
 		<Unit filename="/Users/chelufabian/Documents/GitHub/tema-poo/POO/masa.h">
-			<Option target="POO"/>
-		</Unit>
-		<Unit filename="/Users/chelufabian/Documents/GitHub/tema-poo/POO/note.cpp">
-			<Option target="POO"/>
-		</Unit>
-		<Unit filename="/Users/chelufabian/Documents/GitHub/tema-poo/POO/note.h">
 			<Option target="POO"/>
 		</Unit>
 		<Unit filename="/Users/chelufabian/Documents/GitHub/tema-poo/POO/ospatar.cpp">
