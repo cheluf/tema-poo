@@ -8,13 +8,13 @@
 #include "produs.h"
 #include <vector>
 
-class mancare: public produs
+class mancare: public produs       // afisez ingredientele unui produs si costul acestora
 {
-   std::vector <std::string> ing;
+   std::vector<produs> ing;
 public:
     mancare() = default;
     ~mancare()=default;
-    mancare(std::string nume_produs,std::vector<std::string> ingr);
+    mancare(std::string nume_produs,std::vector<produs> ingr);
     void afisare_produs() override;
 };
 #endif //POO_MANCARE_H
