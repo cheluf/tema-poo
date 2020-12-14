@@ -18,11 +18,12 @@ public:
     int getCod();
     std::string getNume();
     produs &operator=(const produs &);
-    friend std::ostream& operator<<(std::ostream& out,const produs& abc);
-    ~produs() = default;
+    friend std::ostream &operator<<(std::ostream &out, const produs &abc);
 
-    virtual void afisare_produs(){
-        std::cout<< "Nume produs: " <<nume_produs << " || ID: "<<cod_produs << std::endl;
+    virtual ~produs() = default;
+
+    virtual void afisare_produs() {
+        std::cout << "Nume produs: " << nume_produs << " || ID: " << cod_produs << std::endl;
     }
 
 };

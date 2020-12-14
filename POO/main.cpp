@@ -33,11 +33,12 @@ int main() {
     cout << "\n";
 
     vin.afisare_produs();      // afisez produsul
-    
-    cout<< "\n";
 
-    mancare id4("Snitel de pui",{pieptpui,parmezan});      // initializez ingredientele
-    id4.afisare_produs();     //afisez ingredientele
+    cout << "\n";
+
+    mancare id4("Snitel de pui", {pieptpui, parmezan});      // initializez ingredientele
+    produs &pr = id4;
+    pr.afisare_produs();     //afisez ingredientele
 
     return 0;
 }
