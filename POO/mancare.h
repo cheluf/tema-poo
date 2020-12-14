@@ -11,12 +11,12 @@
 class mancare: public produs       // afisez ingredientele unui produs si costul acestora
 {
    std::vector<produs> ing;
-
 public:
-
     mancare() = default;
-    ~mancare()=default;
-    mancare(std::string nume_produs,std::vector<produs> ingr);
+
+    ~mancare() override = default;
+
+    mancare(std::string nume_produs, std::vector<produs> ingr);
     void afisare_produs() override;
 };
 #endif //POO_MANCARE_H
