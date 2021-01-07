@@ -3,6 +3,7 @@
 #include "produs.h"
 #include "ospatar.h"
 #include "mancare.h"
+#include "produs_builder.h"
 using namespace std;
 
 int main() {
@@ -39,6 +40,13 @@ int main() {
     mancare id4("Snitel de pui", {pieptpui, parmezan});      // initializez ingredientele
     produs &pr = id4;
     pr.afisare_produs();     //afisez ingredientele
+
+    produs_builder b;
+    produsb p;
+    p = b.nume_produs("Orez").cod_produs(3).pret_produs(300).build();
+    cout << " " << endl;
+    p.afisare_produsb();
+
 
     return 0;
 }

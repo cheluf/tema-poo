@@ -3,4 +3,4 @@ project(POO)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(POO main.cpp produs.h produs.cpp produs.h ospatar.cpp ospatar.h masa.cpp masa.h mancare.cpp mancare.h)
+add_executable(POO main.cpp produs.h produs.cpp produs.h ospatar.cpp ospatar.h masa.cpp masa.h mancare.cpp mancare.h produs_builder.h)
