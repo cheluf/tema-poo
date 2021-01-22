@@ -4,6 +4,7 @@
 #include "ospatar.h"
 #include "mancare.h"
 #include "produs_builder.h"
+#include <fstream>
 using namespace std;
 
 int main() {
@@ -47,6 +48,17 @@ int main() {
     cout << " " << endl;
     p.afisare_produsb();
 
+
+    try {
+       masa1=masa2;      //aceeasi comanda;
+       if(masa1.getNrProduse() == masa2.getNrProduse())
+       {
+           cout<<masa1;
+       }
+    }
+    catch (exception &e) {
+        cout << "Eroare: " << e.what() << endl;
+    }
 
     return 0;
 }

@@ -27,6 +27,8 @@ masa(masa& masa);
 friend std::ostream& operator<<(std::ostream& ost, masa& ms);
 friend masa operator+(masa&,produs&);
 
+    int getNrProduse() const;
+
 };
 
 #endif //POO_MASA_H

@@ -1,7 +1,3 @@
-//
-// Created by Chelu Fabian on 01.12.2020.
-//
-
 #include "masa.h"
 #include <iostream>
 #include <vector>
@@ -62,4 +58,8 @@ masa::masa(masa& masa){
     this->persoane=masa.persoane;
     this->nr_produse=masa.nr_produse;
     this->produse=masa.produse;
+}
+
+int masa::getNrProduse() const {
+    return nr_produse;
 }
