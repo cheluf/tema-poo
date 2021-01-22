@@ -48,13 +48,10 @@ int main() {
     cout << " " << endl;
     p.afisare_produsb();
 
+    masa masa4(1,2,-3,{vin});
 
     try {
-       masa1=masa2;      //aceeasi comanda;
-       if(masa1.getNrProduse() == masa2.getNrProduse())
-       {
-           cout<<masa1;
-       }
+        vin.getNume().substr(4);
     }
     catch (exception &e) {
         cout << "Eroare: " << e.what() << endl;
